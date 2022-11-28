@@ -1,0 +1,41 @@
+{
+  "name": "ignore-console",
+  "version": "0.0.1",
+  "description": "ignore console(error,log,warn...)",
+  "author": "minisola <blackkid1989@gmail.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "keywords": [
+    "ignore",
+    "console",
+    "antd",
+    "js"
+  ],
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "homepage": "https://github.com/minisola/ignore-console",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minisola/ignore-console"
+  },
+  "scripts": {
+    "build": "father-build",
+    "test-yalc": "yalc push"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "father-build": "^1.21.2",
+    "typescript": "^4.6.3"
+  }
+}
