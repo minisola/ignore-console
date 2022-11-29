@@ -47,15 +47,15 @@ export default function ignoreConsole(config: options | undefined) {
     })
     .join("|");
 
-  if (window.console && window.console[type]) {
-    const filterError = window.console[type];
-    window.console[type] = function (...args: any[]) {
-      const [errorMessage] = args;
+  if (console && console[type]) {
+    const filterError = console[type];
+    console[type] = function (...args: any[]) {
+      const [message] = args;
       const reg = new RegExp(ignoreRuleRegList, "g");
-      const result = reg.exec(errorMessage);
+      const result = reg.exec(message);
       if (result) {
         if (showLog) {
-          window.console.log("Ignored info: ", errorMessage);
+          console.log("Ignored info: ", message);
         }
         return;
       }
