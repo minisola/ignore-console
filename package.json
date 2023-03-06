@@ -1,6 +1,6 @@
 {
   "name": "ignore-console",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "ignore console(error,log,warn...)",
   "author": "minisola <blackkid1989@gmail.com>",
   "license": "MIT",

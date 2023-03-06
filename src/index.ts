@@ -25,7 +25,7 @@ interface options {
 
 export const antdRule: String[] = ["Warning: \\[antd:"];
 
-export default function ignoreConsole(config: options | undefined) {
+export default function ignoreConsole(config?: options | undefined) {
   // default options
   const defaultConfig = config || {};
   const {

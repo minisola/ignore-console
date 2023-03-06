@@ -1,7 +1,7 @@
 # ignore-console
 
 ignore console(error,log,warn...)
-(主要为了解决 antd 4.23.0 开发环境下疯狂抛 error 提示 deprecated 的问题 😠)
+(主要为了解决 antd 4.23+ 开发环境下疯狂抛 error 提示 deprecated 的问题 😠)
 
 # Installation
 
